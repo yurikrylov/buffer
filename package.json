@@ -1,0 +1,36 @@
+{
+  "name": "click_house_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "concurrently \"npx tsc\" \"pm2-dev start dist/server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurikrylov/click_house_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurikrylov/click_house_test/issues"
+  },
+  "homepage": "https://github.com/yurikrylov/click_house_test#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "redis": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "concurrently": "^7.5.0",
+    "eslint": "^8.27.0",
+    "typescript": "^4.8.4"
+  }
+}
